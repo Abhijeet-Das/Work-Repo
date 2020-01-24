@@ -1,3 +1,3 @@
 // Procfile
 
-/examples/index.html
+web: grunt serve

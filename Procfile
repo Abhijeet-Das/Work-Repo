@@ -1,3 +1,3 @@
 // Procfile
 
-web: examples/index.html
+/examples/index.html

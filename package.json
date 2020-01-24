@@ -75,6 +75,5 @@
     "serve": "grunt serve",
     "test": "grunt test",
     "start": "grunt serve",
-    "build": "grunt serve"
   }
 }

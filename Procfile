@@ -1,3 +1,3 @@
 // Procfile
 
-web: grunt serve
+web: npm start

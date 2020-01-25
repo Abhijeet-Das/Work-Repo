@@ -442,13 +442,8 @@ module.exports = function(grunt) {
         'copy:doc_script'
     ]);
 
-     grunt.registerTask('heroku:production',[
-        'build_lang',
-        'build_css',
-        'injector:example',
-        'open',
-        'connect:dev',
-        'watch'
+     grunt.registerTask('heroku',[
+        'serve'
     ]);
      
 };

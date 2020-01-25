@@ -442,8 +442,6 @@ module.exports = function(grunt) {
         'copy:doc_script'
     ]);
 
-     grunt.registerTask('heroku',[
-        'serve'
-    ]);
+    grunt.registerTask('heroku', ['js_core_files']);
      
 };

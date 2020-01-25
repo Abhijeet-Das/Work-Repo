@@ -74,6 +74,7 @@
   "scripts": {
     "serve": "grunt serve",
     "test": "grunt test",
+    "build": "grunt serve",
     "start": "grunt serve"
   }
 }

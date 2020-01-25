@@ -75,6 +75,6 @@
     "serve": "grunt serve",
     "test": "grunt test",
     "build": "grunt serve",
-    "start": "grunt serve"
+    "start": "node_modules/.bin/grunt serve"
   }
 }

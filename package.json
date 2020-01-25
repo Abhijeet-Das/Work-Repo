@@ -77,7 +77,6 @@
     "node": "13.x"
   },
   "scripts": {
-    "postinstall": "./node_modules/grunt-cli/bin/grunt serve",
     "serve": "grunt serve",
     "test": "grunt test",
     "build": "grunt serve",

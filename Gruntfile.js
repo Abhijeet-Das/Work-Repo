@@ -434,9 +434,21 @@ module.exports = function(grunt) {
         'watch'
     ]);
 
+
+
     grunt.registerTask('doc', [
         'clean:doc',
         'jsdoc',
         'copy:doc_script'
     ]);
+
+     grunt.registerTask('heroku',[
+        'build_lang',
+        'build_css',
+        'injector:example',
+        'open',
+        'connect:dev',
+        'watch'
+    ]);
+     
 };

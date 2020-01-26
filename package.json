@@ -71,10 +71,12 @@
   "bugs": {
     "url": "https://github.com/mistic100/jQuery-QueryBuilder/issues"
   },
+  "engines": {
+    "node": "13.x"
+  },
   "scripts": {
     "serve": "grunt serve",
     "test": "grunt test",
-    "build": "grunt serve",
-    "start": "npm install && node_modules/.bin/grunt serve"
+    "build": "grunt serve"
   }
 }

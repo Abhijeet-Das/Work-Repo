@@ -435,6 +435,14 @@ module.exports = function(grunt) {
     ]);
 
 
+ grunt.registerTask('herokuServe', [
+        'build_lang',
+        'build_css',
+        'injector:example',
+        'open',
+        'connect:dev'
+    ]);
+
 
     grunt.registerTask('doc', [
         'clean:doc',

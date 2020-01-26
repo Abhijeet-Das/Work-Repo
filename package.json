@@ -77,6 +77,6 @@
   "scripts": {
     "serve": "grunt serve",
     "test": "grunt test",
-    "build": "grunt serve"
+    "build": "grunt herokuServe"
   }
 }

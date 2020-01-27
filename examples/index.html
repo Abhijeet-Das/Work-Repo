@@ -166,7 +166,7 @@
 
   var $b = $('#builder');
 
-
+  //var filters = {};
 
   var options = {
     allow_empty: true,
@@ -383,6 +383,8 @@
   };
 
 
+var matFilters = options.filters;
+
 console.log('orig filters', options.filters);
   // init
   $('#builder').queryBuilder(options);
@@ -490,14 +492,27 @@ console.log('orig filters', options.filters);
 
      $('#builder').queryBuilder('addFilter', cusFilter, 0);
 
-      $('#builder').queryBuilder('removeFilter', ['fert', 'foods', 'voll', 'intr', 'cont', 'ibau', 'hers', 'mpo']);
+     $('#builder').queryBuilder('removeFilter', ['fert', 'foods', 'voll', 'intr', 'cont', 'ibau', 'hers', 'mpo']);
 
       //options.filters = testFilter;
       //$('#builder').queryBuilder(options);
     }
 
+    if(obj=='mat'){
+
+      console.log('changed to mat');
+
+      console.log('matFilters>>', matFilters);
+
+      $('#builder').queryBuilder('addFilter', matFilters, 0);
+
+       $('#builder').queryBuilder('removeFilter', ['dict', 'rep', 'func', 'form']);
+
+     
+    }
+
   
-      console.log('options>>', options);
+     
 
   });
 

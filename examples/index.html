@@ -403,6 +403,9 @@ console.log('orig filters', options.filters);
 
     console.log('obj >>>', obj);
 
+    $('#builder').queryBuilder('reset');
+    $('#result').addClass('hide').find('pre').empty();
+
     if(obj=='cus'){
       console.log('Filter options to be changerd');
        var cusFilter = [
@@ -522,10 +525,9 @@ console.log('orig filters', options.filters);
   $('[name=language]').selectpicker().on('change', function() {
     var lang = $(this).val();
 
-    console.log('lang >>>', lang);
+     console.log('lang >>>', lang);
 
-
-    var done = function() {
+      var done = function() {
       var rules = $b.queryBuilder('getRules');
       if (!$.isEmptyObject(rules)) {
         options.rules = rules;
